@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon-32x32.png" />
+    <title>Ja-pancakes Shop</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="slideshow.js" defer></script>
+    <script>
+      window.addEventListener("load", function () {
+        const loader = document.querySelector(".loader");
+        const minimumDisplayTime = 2000; // 2 seconds
+        const startTime = Date.now();
+        const timeElapsed = Date.now() - startTime;
+        const remainingTime = Math.max(0, minimumDisplayTime - timeElapsed);
+
+        setTimeout(function () {
+          loader.classList.add("hidden"); // Add hidden class to trigger fade-out
+          setTimeout(function () {
+            loader.style.display = "none";
+          }, 500); // Match the transition duration (0.5s)
+        }, remainingTime);
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Loading Animation Overlay -->
+    <div class="loader">
+      <img
+        src="images/Table Fan Loading.gif"
+        alt="Loading Fan"
+        class="fan-icon"
+      />
+    </div>
+
+    <div id="top"></div>
+    <div class="navbar">
+      <div class="logo-container">
+        <img
+          src="images/japanese-souffle-pancake-vector-illustration-logo-with-caramel-sauce_499212-1389.jpg"
+          id="Logo"
+          style="display: block; margin: 0; padding: 0"
+          width="90"
+          alt="Ja-pancakes Logo"
+        />
+        <h1 style="margin-left: 32px">Ja-Pancakes Store</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="stores.html">Stores</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="slideshow-container">
+      <div class="slide active">
+        <img
+          src="images/Banana Chocolate Crepes.jpg"
+          alt="Pancake Slide 1"
+          class="slide-img"
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="images/sakurapancake.jpg"
+          alt="Pancake Slide 2"
+          class="slide-img"
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="images/Melon Pan.jpg"
+          alt="Pancake Slide 3"
+          class="slide-img"
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="images/chocolate souffle pancakes.jpg"
+          alt="Pancake Slide 4"
+          class="slide-img"
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="images/Matcha Crepes.jpg"
+          alt="Pancake Slide 5"
+          class="slide-img"
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="images/Harajuku Crepes.jpg"
+          alt="Pancake Slide 6"
+          class="slide-img"
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="images/Choux Cream.jpg"
+          alt="Pancake Slide 7"
+          class="slide-img"
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="images/Kare Pan.jpg"
+          alt="Pancake Slide 8"
+          class="slide-img"
+        />
+      </div>
+      <button class="prev" onclick="plusSlides(-1)">❮</button>
+      <button class="next" onclick="plusSlides(1)">❯</button>
+      <div class="dot-container"></div>
+      <div class="cta-section">
+        <a href="menu.html" class="cta-button">Explore Menu</a>
+        <a href="cart.html" class="cta-button">Order Now</a>
+      </div>
+    </div>
+
+    <section class="intro-section">
+      <h3 style="text-align: center; font-weight: bold">Made to Bring Joy</h3>
+      <p class="fade-in" style="text-align: center; margin: 0 50px">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat at
+        quidem explicabo praesentium nostrum consequuntur maxime, veniam sint
+        amet minus, commodi ducimus ullam.
+        <em>
+          Temporibus cumque, dolores ducimus beatae harum id aut, necessitatibus
+          velit vero natus sit commodi dolor molestiae placeat eaque nemo
+          blanditiis illum voluptates ullam, fuga nobis!
+        </em>
+        Velit provident quia fugiat blanditiis magni nisi eveniet. Labore neque
+        quam adipisci?
+      </p>
+      <hr style="border: 1px solid #ccc; width: 80%; margin: 30px auto" />
+    </section>
+
+    <section class="featured-section">
+      <h2 style="text-align: center; font-size: 2rem">Featured Items</h2>
+      <div class="featured-items">
+        <!-- Dorayaki Pancakes -->
+        <div class="pan-cake">
+          <img src="images/dorayaki pancake feature.jpg" alt="Dorayaki" />
+          <p>
+            Indulge in the delicious taste of
+            <strong style="text-decoration: underline">
+              Dorayaki—fluffy, golden pancakes
+            </strong>
+            filled with sweet red bean paste. A beloved Japanese treat perfect
+            for any time of the day.
+          </p>
+          <span class="pancake-name">Dorayaki</span>
+        </div>
+
+        <!-- Souffle Pancakes -->
+        <div class="pan-cake">
+          <img
+            src="images/Strawberry Souffle Pancakes.jpg"
+            alt="Strawberry Soufflé"
+          />
+          <p>
+            Delight in the airy perfection of
+            <strong style="text-decoration: underline">
+              Strawberry Soufflé Pancakes—light, jiggly stacks
+            </strong>
+            crowned with fresh, juicy strawberries. A melt-in-your-mouth dream.
+          </p>
+          <span class="pancake-name">Strawberry Soufflé</span>
+        </div>
+
+        <!-- Creme-Brulee Pancakes -->
+        <div class="pan-cake">
+          <img src="images/Plain Pancakes.jpg" alt="Crème Brûlée" />
+          <p>
+            Savor the luxurious fusion of
+            <strong style="text-decoration: underline">
+              Crème Brûlée Fluffy Pancakes—thick, pillowy stacks
+            </strong>
+            with a caramelized, crackly top. An indulgent twist on a classic.
+          </p>
+          <span class="pancake-name">Crème Brûlée</span>
+        </div>
+
+        <!-- Matcha Pancakes -->
+        <div class="pan-cake">
+          <img src="images/Matcha Pancake 2.jpeg" alt="Matcha Pancake" />
+          <p>
+            Experience the vibrant essence of
+            <strong style="text-decoration: underline">
+              Matcha Pancakes—fluffy stacks
+            </strong>
+            infused with the earthy, rich flavor of premium Japanese green tea.
+            Often paired with a dusting of powdered sugar or a dollop of whipped
+            cream, these pancakes bring a unique, subtly bitter twist to the
+            classic sweetness.
+          </p>
+          <span class="pancake-name">Matcha Pancakes</span>
+        </div>
+
+        <!-- Cream Pan -->
+        <div class="assort-del">
+          <img src="images/Cream Pan.jpg" alt="Cream Pan" />
+          <p>
+            Savor the creamy goodness of
+            <strong style="text-decoration: underline">
+              Cream Pan—fluffy rolls
+            </strong>
+            stuffed with rich custard. A nostalgic Japanese bread treat.
+          </p>
+          <span class="delicacy-name">Cream Pan</span>
+        </div>
+
+        <!-- Daifuku-Mochi -->
+        <div class="assort-del">
+          <img src="images/Daifuku.jpg" alt="Daifuku-Mochi" />
+          <p>
+            Pop the chewy joy of
+            <strong style="text-decoration: underline">
+              Daifuku-mochi—mochi balls
+            </strong>
+            filled with red bean paste or strawberry cream. A bite-sized
+            Japanese sweet.
+          </p>
+          <span class="delicacy-name">Daifuku-Mochi</span>
+        </div>
+
+        <!-- Taiyaki Puff -->
+        <div class="assort-del">
+          <img src="images/Taiyaki.jpg" alt="Taiyaki Puff" />
+          <p>
+            Bite into the charm of
+            <strong style="text-decoration: underline">
+              Taiyaki Puff—fish-shaped pastries
+            </strong>
+            filled with red bean paste or custard. A crispy, warm street food
+            favorite.
+          </p>
+          <span class="delicacy-name">Taiyaki Puff</span>
+        </div>
+
+        <!-- Anpan Bun -->
+        <div class="assort-del">
+          <img src="images/Anpan.jpg" alt="Anpan Bun" />
+          <p>
+            Enjoy the timeless taste of
+            <strong style="text-decoration: underline">
+              Anpan Bun—soft round buns
+            </strong>
+            filled with sweet red bean paste. A Japanese bakery classic topped
+            with sesame.
+          </p>
+          <span class="delicacy-name">Anpan Bun</span>
+        </div>
+
+        <!-- Matcha Latte -->
+        <div class="drinks">
+          <img src="images/Matcha Latte 2.jpg" alt="Matcha Latte" />
+          <p>
+            Savor the creamy bliss of a
+            <strong style="text-decoration: underline">
+              Matcha Latte—finely ground green tea
+            </strong>
+            whisked into steamed milk. A harmonious blend of earthy richness and
+            smooth sweetness.
+          </p>
+          <span class="drink-name">Matcha Latte</span>
+        </div>
+
+        <!-- Hojicha Tea -->
+        <div class="drinks">
+          <img src="images/Hojicha Tea 2.jpg" alt="Hojicha Tea" />
+          <p>
+            Savor the creamy bliss of a
+            <strong style="text-decoration: underline">
+              Hojicha Tea—roasted green tea leaves
+            </strong>
+            whisked into steamed milk. A harmonious blend of earthy richness and
+            smooth sweetness.
+          </p>
+          <span class="drink-name">Hojicha Tea</span>
+        </div>
+
+        <!-- Calpis (Calpico) -->
+        <div class="drinks">
+          <img src="images/Calpico Drink 2.png" alt="Calpis (Calpico)" />
+          <p>
+            Savor the creamy bliss of a
+            <strong style="text-decoration: underline">
+              Calpis—a yogurt-infused soft drink
+            </strong>
+            whisked into steamed milk. A harmonious blend of earthy richness and
+            smooth sweetness.
+          </p>
+          <span class="drink-name">Calpis (Calpico)</span>
+        </div>
+
+        <!-- Ramune -->
+        <div class="drinks">
+          <img src="images/Ramune Drink 2.jpg" alt="Ramune" />
+          <p>
+            Savor the creamy bliss of a
+            <strong style="text-decoration: underline">
+              Ramune—a fizzy lemon-lime soda
+            </strong>
+            whisked into steamed milk. A harmonious blend of earthy richness and
+            smooth sweetness.
+          </p>
+          <span class="drink-name">Ramune</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="special-section">
+      <h3 style="text-align: center; font-weight: bold">
+        What Makes Us Special
+      </h3>
+      <em>
+        <p class="fade-in" style="text-align: center; margin: 0 50px">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ratione
+          doloremque rerum tempore perspiciatis aliquam facilis a, ipsum quae
+          explicabo aut odio ducimus ipsa dolores illo? Perspiciatis, neque.
+          Voluptate, atque. Nisi, deserunt similique quam eos modi dignissimos
+          minus cumque earum, quae recusandae fugit dolor fugiat consequuntur
+          consequatur, totam fuga laborum temporibus enim sapiente praesentium.
+          Facere cum itaque tenetur vitae voluptates?
+        </p>
+        <hr style="border: 1px solid #ccc; width: 80%; margin: 30px auto" />
+      </em>
+    </section>
+
+    <div class="end-page">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h3>Contact Us On</h3>
+          <p>+91 9876543210</p>
+          <p>+91 8765432109</p>
+          <p>+91 7654321098</p>
+          <p>+91 6543210987</p>
+          <p>contact1@japancakes.in</p>
+          <p>contact2@japancakes.in</p>
+          <p>contact3@japancakes.in</p>
+          <p>contact4@japancakes.in</p>
+        </div>
+        <div class="footer-column">
+          <h3>Ja-Pancakes Shop</h3>
+          <h5>Visit us</h5>
+          <div class="social-icons">
+            <a
+              href="https://instagram.com/japancakes"
+              target="https://www.instagram.com/"
+            >
+              <img
+                src="images/Insta Logo Social.png"
+                alt="Instagram"
+                width="30"
+              />
+            </a>
+            <a
+              href="https://facebook.com/japancakes"
+              target="https://www.facebook.com/"
+            >
+              <img
+                src="images/Facebook Logo Social.png"
+                alt="Facebook"
+                width="30"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Information</h3>
+          <p><a href="contact.html">Contact</a></p>
+          <p><a href="stores.html">Stores</a></p>
+          <p><a href="about.html">About</a></p>
+        </div>
+      </div>
+      <div class="back-to-top-container">
+        <a href="#top" class="back-to-top">Back to the Top</a>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Ja-Pancakes Store. All rights reserved.</p>
+      </div>
+    </div>
+
+    <script src="scripts.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon-32x32.png" />
+    <h1 style="margin-left: 32px">Ja-Pancakes Shop</h1>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div id="top"></div>
+      <div class="navbar">
+        <div class="logo-container">
+          <img
+            src="images/japanese-souffle-pancake-vector-illustration-logo-with-caramel-sauce_499212-1389.jpg"
+            id="Logo"
+            style="display: block; margin: 0; padding: 0"
+            width="90"
+            alt="Ja-Pancakes Store Logo"
+          />
+          <h1 style="margin-left: 25px">Ja-Pancakes Store</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="numbers.html">Numbers</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Checkout Section -->
+      <div class="checkout-container">
+        <h2 style="text-align: left; font-size: 32px; margin: 20px">
+          Checkout
+        </h2>
+
+        <!-- Order Summary -->
+        <div class="order-summary">
+          <h3>Order Summary</h3>
+          <div id="order-items"></div>
+          <div class="order-total">
+            <h3>
+              Total: $
+              <span id="order-total">0.00</span>
+            </h3>
+          </div>
+        </div>
+
+        <!-- Checkout Form -->
+        <form id="checkout-form" class="checkout-form">
+          <h3>Customer Information</h3>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <h3>Shipping Information</h3>
+          <label for="address">Street Address:</label>
+          <input type="text" id="address" name="address" required />
+          <label for="address">Street Address 2:</label>
+          <input type="text" id="address" name="address" required />
+
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" required />
+
+          <label for="state">State:</label>
+          <input type="text" id="state" name="state" required />
+
+          <label for="zip">ZIP Code:</label>
+          <input type="text" id="zip" name="zip" required />
+
+          <h3>Payment Information</h3>
+          <label for="card-number">Card Number:</label>
+          <input type="text" id="card-number" name="card-number" required />
+
+          <label for="expiry">Expiry Date (MM/YY):</label>
+          <input type="text" id="expiry" name="expiry" required />
+
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" name="cvv" required />
+
+          <button type="button" id="back-to-menu-btn">Back to Menu</button>
+          <button type="submit" id="confirm-btn">Confirm Order</button>
+          <!-- Added Back to Menu button -->
+        </form>
+      </div>
+
+      <hr style="border: 1px solid #ccc; width: 80%; margin: 30px auto" />
+    </div>
+    <div class="end-page">
+      <p>© 2025 Ja-Pancakes Store. All rights reserved.</p>
+      <div class="back-to-top-container">
+        <a href="#top" class="back-to-top">Back to the Top</a>
+      </div>
+    </div>
+
+    <!-- JavaScript for Checkout Functionality -->
+    <script>
+      // Load cart from localStorage
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      function displayOrderSummary() {
+        const orderItemsDiv = document.getElementById("order-items");
+        const orderTotalSpan = document.getElementById("order-total");
+        orderItemsDiv.innerHTML = "";
+
+        if (cart.length === 0) {
+          orderItemsDiv.innerHTML = "<p>No items in your order.</p>";
+          orderTotalSpan.textContent = "0.00";
+          return;
+        }
+
+        let total = 0;
+        cart.forEach((item) => {
+          const itemTotal = item.price * item.quantity;
+          const itemDiv = document.createElement("div");
+          itemDiv.classList.add("cart-item");
+          itemDiv.innerHTML = `
+            <img src="${item.image}" alt="${item.name}" loading="lazy" />
+            <div class="name-desc-wrapper">
+              <span class="cart-item-name">${item.name}</span>
+              <p>Quantity: ${item.quantity} | Total: $${itemTotal.toFixed(
+            2
+          )}</p>
+            </div>
+          `;
+          orderItemsDiv.appendChild(itemDiv);
+          total += itemTotal;
+        });
+
+        orderTotalSpan.textContent = total.toFixed(2);
+      }
+
+      // Handle form submission
+      document
+        .getElementById("checkout-form")
+        .addEventListener("submit", (e) => {
+          e.preventDefault();
+          if (cart.length === 0) {
+            alert("Your cart is empty!");
+            return;
+          }
+
+          // Simulate order confirmation
+          alert("Thank you for your order! Your pancakes are on the way!");
+          cart = []; // Clear the cart
+          localStorage.setItem("cart", JSON.stringify(cart));
+          window.location.href = "index.html"; // Redirect to home page
+        });
+
+      // Handle Back to Menu button
+      document
+        .getElementById("back-to-menu-btn")
+        .addEventListener("click", () => {
+          window.location.href = "menu.html"; // Redirect to menu page
+        });
+
+      // Display order summary on page load
+      document.addEventListener("DOMContentLoaded", () => {
+        displayOrderSummary();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon-32x32.png" />
+    <title>Ja-Pancakes Shop - Stores</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      window.addEventListener("load", function () {
+        const loader = document.querySelector(".loader");
+        const minimumDisplayTime = 2000; // 2 seconds
+        const startTime = Date.now();
+        const timeElapsed = Date.now() - startTime;
+        const remainingTime = Math.max(0, minimumDisplayTime - timeElapsed);
+
+        setTimeout(function () {
+          loader.classList.add("hidden");
+          setTimeout(function () {
+            loader.style.display = "none";
+          }, 500);
+        }, remainingTime);
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Loading Animation Overlay -->
+    <div class="loader">
+      <img
+        src="images/Table Fan Loading.gif"
+        alt="Loading Fan"
+        class="fan-icon"
+      />
+    </div>
+
+    <div id="top"></div>
+    <div class="navbar">
+      <div class="logo-container">
+        <img
+          src="images/japanese-souffle-pancake-vector-illustration-logo-with-caramel-sauce_499212-1389.jpg"
+          id="Logo"
+          style="display: block; margin: 0; padding: 0"
+          width="90"
+          alt="Ja-Pancakes Shop Logo"
+        />
+        <h1 style="margin-left: 32px">Ja-Pancakes Shop</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="stores.html">Stores</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="stores-hero">
+      <div class="hero-overlay"></div>
+      <img
+        src="images/About cover.jpg"
+        alt="Ja-Pancakes Store"
+        class="hero-img"
+      />
+      <div class="hero-content fade-in" style="animation-delay: 0.2s">
+        <h2 class="hero-tagline">
+          Find Your Nearest
+          <span class="shop-name">Ja-Pancakes Shop!</span>
+        </h2>
+        <a href="Contact.html" class="cta-button">Contact Us</a>
+      </div>
+    </div>
+
+    <section class="stores-section">
+      <h3 style="text-align: center; font-weight: bold; color: #d2691e">
+        Our Locations
+      </h3>
+
+      <h4
+        id="branches"
+        style="
+          text-align: center;
+          margin-top: 40px;
+          font-weight: normal;
+          color: #d2691e;
+        "
+      >
+        Store Information and Branches
+      </h4>
+      <div class="store-counts">
+        <!-- Mumbai Card -->
+        <div class="count-card fade-in" style="animation-delay: 0.2s">
+          <div class="card-inner">
+            <div class="card-front">
+              <h5>Mumbai</h5>
+              <p>14 Stores</p>
+            </div>
+            <div class="card-back">
+              <h5>Mumbai</h5>
+              <p class="contact-info">
+                Phone:
+                <span class="phone-number">+91 98234 56789</span>
+              </p>
+              <p class="contact-info">
+                Email:
+                <a href="mailto:ja-pancakesshop@mumbai.in">
+                  ja-pancakesshop@mumbai.in
+                </a>
+              </p>
+              <p>Key Locations:</p>
+              <ul>
+                <li>Juhu</li>
+                <li>Bandra</li>
+                <li>Worli</li>
+                <li>And 11 More Branches</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Bangalore Card -->
+        <div class="count-card fade-in" style="animation-delay: 0.4s">
+          <div class="card-inner">
+            <div class="card-front">
+              <h5>Bangalore</h5>
+              <p>8 Stores</p>
+            </div>
+            <div class="card-back">
+              <h5>Bangalore</h5>
+              <p class="contact-info">
+                Phone:
+                <span class="phone-number">+91 98345 67890</span>
+              </p>
+              <p class="contact-info">
+                Email:
+                <a href="mailto:ja-pancakesshop@bangalore.in">
+                  ja-pancakesshop@bangalore.in
+                </a>
+              </p>
+              <p>Key Locations:</p>
+              <ul>
+                <li>Koramangala</li>
+                <li>Indiranagar</li>
+                <li>MG Road</li>
+                <li>And 5 More Branches</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Kochi Card -->
+        <div class="count-card fade-in" style="animation-delay: 0.6s">
+          <div class="card-inner">
+            <div class="card-front">
+              <h5>Kochi</h5>
+              <p>11 Stores</p>
+            </div>
+            <div class="card-back">
+              <h5>Kochi</h5>
+              <p class="contact-info">
+                Phone:
+                <span class="phone-number">+91 98456 78901</span>
+              </p>
+              <p class="contact-info">
+                Email:
+                <a href="mailto:ja-pancakesshop@kochi.in">
+                  ja-pancakesshop@kochi.in
+                </a>
+              </p>
+              <p>Key Locations:</p>
+              <ul>
+                <li>Fort Kochi</li>
+                <li>Ernakulam</li>
+                <li>Marine Drive</li>
+                <li>And 8 More Branches</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Chennai Card -->
+        <div class="count-card fade-in" style="animation-delay: 0.8s">
+          <div class="card-inner">
+            <div class="card-front">
+              <h5>Chennai</h5>
+              <p>8 Stores</p>
+            </div>
+            <div class="card-back">
+              <h5>Chennai</h5>
+              <p class="contact-info">
+                Phone:
+                <span class="phone-number">+91 98567 89012</span>
+              </p>
+              <p class="contact-info">
+                Email:
+                <a href="mailto:ja-pancakesshop@chennai.in">
+                  ja-pancakesshop@chennai.in
+                </a>
+              </p>
+              <p>Key Locations:</p>
+              <ul>
+                <li>Besant Nagar</li>
+                <li>Nungambakkam</li>
+                <li>T. Nagar</li>
+                <li>And 5 More Branches</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="border: 1px solid #ccc; width: 80%; margin: 40px auto" />
+      <h4 style="text-align: center; margin-top: 40px">Find Us</h4>
+      <div class="map-container fade-in" style="animation-delay: 1.8s">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609999995!2d72.74109995798729!3d19.082197839177173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1740981234567!5m2!1sen!2sin"
+          width="100%"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <hr style="border: 1px solid #ccc; width: 80%; margin: 40px auto" />
+    </section>
+
+    <div class="end-page">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h3>Contact Us On</h3>
+          <p>+91 9876543210</p>
+          <p>+91 8765432109</p>
+          <p>+91 7654321098</p>
+          <p>+91 6543210987</p>
+          <p>
+            <a href="mailto:ja-pancakesshop@mumbai.in">
+              ja-pancakesshop@mumbai.in
+            </a>
+          </p>
+          <p>
+            <a href="mailto:ja-pancakesshop@bangalore.in">
+              ja-pancakesshop@bangalore.in
+            </a>
+          </p>
+          <p>
+            <a href="mailto:ja-pancakesshop@kochi.in">
+              ja-pancakesshop@kochi.in
+            </a>
+          </p>
+          <p>
+            <a href="mailto:ja-pancakesshop@chennai.in">
+              ja-pancakesshop@chennai.in
+            </a>
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Ja-Pancakes Shop</h3>
+          <h5>Visit us</h5>
+          <div class="social-icons">
+            <a
+              href="https://instagram.com/japancakes"
+              target="https://www.instagram.com/"
+            >
+              <img
+                src="images/Insta Logo Social.png"
+                alt="Instagram"
+                width="30"
+              />
+            </a>
+            <a
+              href="https://facebook.com/japancakes"
+              target="https://www.facebook.com/"
+            >
+              <img
+                src="images/Facebook Logo Social.png"
+                alt="Facebook"
+                width="30"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Information</h3>
+          <p><a href="contact.html">Contact</a></p>
+          <p><a href="stores.html">Stores</a></p>
+          <p><a href="about.html">About</a></p>
+        </div>
+      </div>
+      <div class="back-to-top-container">
+        <a href="#top" class="back-to-top">Back to the Top</a>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Ja-Pancakes Shop. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon-32x32.png" />
+    <title>Menu - Ja-Pancakes Store</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div id="top"></div>
+      <div class="navbar">
+        <div class="logo-container">
+          <img
+            src="images/japanese-souffle-pancake-vector-illustration-logo-with-caramel-sauce_499212-1389.jpg"
+            id="Logo"
+            style="display: block; margin: 0; padding: 0"
+            width="90"
+            alt="Ja-Pancakes Logo"
+          />
+          <h1 style="margin-left: 32px">Ja-Pancakes Shop</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="stores.html">Stores</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Menu Section -->
+      <div class="menu-container">
+        <!-- Tabs and Search Bar -->
+        <div class="tab-buttons">
+          <div class="tab-btn-group">
+            <button
+              class="tab-btn active"
+              data-tab="pancakes"
+              role="tab"
+              aria-selected="true"
+            >
+              Pancakes & Crepes
+            </button>
+            <button
+              class="tab-btn"
+              data-tab="delicacies"
+              role="tab"
+              aria-selected="false"
+            >
+              Assorted Delicacies
+            </button>
+            <button
+              class="tab-btn"
+              data-tab="drinks"
+              role="tab"
+              aria-selected="false"
+            >
+              Drinks
+            </button>
+          </div>
+          <div class="search-container">
+            <input
+              type="text"
+              id="search-input"
+              class="search-input"
+              placeholder="Search menu items..."
+            />
+          </div>
+          <div class="cart-group">
+            <a href="cart.html" class="tab-btn cart-btn" id="cart-btn">
+              Cart (
+              <span id="cart-count">0</span>
+              )
+            </a>
+            <div id="cart-popup" class="cart-popup" style="display: none">
+              View your cart items here!
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content">
+          <!-- Pancakes & Crepes Tab -->
+          <div id="pancakes" class="tab-pane active">
+            <!-- 1. Dora-yaki -->
+            <div class="menu-pancake">
+              <img
+                src="images/dorayaki pancake feature.jpg"
+                alt="Dora-yaki"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="pancake-name">Dora-yaki</span>
+                <p>
+                  Indulge in the delicious taste of
+                  <strong style="text-decoration: underline">
+                    Dora-yaki—fluffy, golden pancakes
+                  </strong>
+                  filled with sweet red bean paste. A beloved Japanese treat
+                  perfect for any time of the day.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹349</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Dora-yaki quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Dora-yaki quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 2. Strawberry Soufflé Pancakes -->
+            <div class="menu-pancake">
+              <img
+                src="images/Strawberry Souffle Pancakes.jpg"
+                alt="Strawberry Soufflé Pancakes"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="pancake-name">Strawberry Soufflé Pancakes</span>
+                <p>
+                  Delight in the airy perfection of
+                  <strong style="text-decoration: underline">
+                    Strawberry Soufflé Pancakes—light, jiggly stacks
+                  </strong>
+                  topped with fresh strawberries and whipped cream. A modern
+                  Japanese café classic.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹599</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Strawberry Soufflé Pancakes quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Strawberry Soufflé Pancakes quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 3. Matcha Soufflé Pancakes -->
+            <div class="menu-pancake">
+              <img
+                src="images/Matcha Pancake 2.jpeg"
+                alt="Matcha Soufflé Pancakes"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="pancake-name">Matcha Soufflé Pancakes</span>
+                <p>
+                  Experience the vibrant essence of
+                  <strong style="text-decoration: underline">
+                    Matcha Soufflé Pancakes—fluffy stacks
+                  </strong>
+                  infused with rich green tea flavor. Paired with powdered sugar
+                  or red bean paste.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹649</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Matcha Soufflé Pancakes quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Matcha Soufflé Pancakes quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 4. Crème Brûlée Pancakes -->
+            <div class="menu-pancake">
+              <img
+                src="images/creme-brulee-japanese-souffle-pancakes-4391w.jpg"
+                alt="Crème Brûlée Pancakes"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="pancake-name">Crème Brûlée Pancakes</span>
+                <p>
+                  Savor the luxurious fusion of
+                  <strong style="text-decoration: underline">
+                    Crème Brûlée Pancakes—pillowy stacks
+                  </strong>
+                  with a caramelized sugar crust. A sweet blend of French and
+                  Japanese flair.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹649</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Crème Brûlée Pancakes quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Crème Brûlée Pancakes quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 5. Custard Soufflé Pancakes -->
+            <div class="menu-pancake">
+              <img
+                src="images/Custard Soufflé Pancakes.jpg"
+                alt="Custard Soufflé Pancakes"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="pancake-name">Custard Soufflé Pancakes</span>
+                <p>
+                  Relish the creamy delight of
+                  <strong style="text-decoration: underline">
+                    Custard Soufflé Pancakes—airy stacks
+                  </strong>
+                  filled with rich custard. Smooth and indulgent with every
+                  bite.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹599</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Custard Soufflé Pancakes quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Custard Soufflé Pancakes quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 6. Chocolate Soufflé Pancakes -->
+            <div class="menu-pancake">
+              <img
+                src="images/chocolate souffle pancakes.jpg"
+                alt="Chocolate Soufflé Pancakes"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="pancake-name">Chocolate Soufflé Pancakes</span>
+                <p>
+                  Dive into the richness of
+                  <strong style="text-decoration: underline">
+                    Chocolate Soufflé Pancakes—fluffy stacks
+                  </strong>
+                  swirled with melted chocolate. A decadent treat for chocolate
+                  lovers.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹599</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Chocolate Soufflé Pancakes quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Chocolate Soufflé Pancakes quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 7. Hokkaido Milk Pancakes -->
+            <div class="menu-pancake">
+              <img
+                src="images/Hokkaido Milk Pancakes.jpg"
+                alt="Hokkaido Milk Pancakes"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="pancake-name">Hokkaido Milk Pancakes</span>
+                <p>
+                  Enjoy the creamy simplicity of
+                  <strong style="text-decoration: underline">
+                    Hokkaido Milk Pancakes—soft stacks
+                  </strong>
+                  made with rich Hokkaido milk. Perfect with butter or a light
+                  syrup drizzle.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹499</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Hokkaido Milk Pancakes quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Hokkaido Milk Pancakes quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 8. Kinako Pancakes -->
+            <div class="menu-pancake">
+              <img
+                src="images/Kinako Pancakes.jpg"
+                alt="Kinako Pancakes"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="pancake-name">Kinako Pancakes</span>
+                <p>
+                  Taste the nutty charm of
+                  <strong style="text-decoration: underline">
+                    Kinako Pancakes—fluffy stacks
+                  </strong>
+                  dusted with roasted soybean flour and kuromitsu syrup. A
+                  traditional delight.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹349</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Kinako Pancakes quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Kinako Pancakes quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 9. Sakura Pancakes -->
+            <div class="menu-pancake">
+              <img
+                src="images/sakurapancake.jpg"
+                alt="Sakura Pancakes"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="pancake-name">Sakura Pancakes</span>
+                <p>
+                  Celebrate spring with
+                  <strong style="text-decoration: underline">
+                    Sakura Pancakes—delicate stacks
+                  </strong>
+                  infused with cherry blossom flavor. Lightly pink and paired
+                  with whipped cream.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹399</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Sakura Pancakes quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Sakura Pancakes quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 10. Yuzu Pancakes -->
+            <div class="menu-pancake">
+              <img
+                src="images/Yuzu Pancakes.jpg"
+                alt="Yuzu Pancakes"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="pancake-name">Yuzu Pancakes</span>
+                <p>
+                  Brighten your day with
+                  <strong style="text-decoration: underline">
+                    Yuzu Pancakes—fluffy stacks
+                  </strong>
+                  kissed with citrusy yuzu zest. A refreshing twist on a sweet
+                  classic.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹449</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Yuzu Pancakes quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Yuzu Pancakes quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 11. Japanese Hotcakes -->
+            <div class="menu-pancake">
+              <img
+                src="images/Japanese Hotcakes.jpg"
+                alt="Japanese Hotcakes"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="pancake-name">Japanese Hotcakes</span>
+                <p>
+                  Relive nostalgia with
+                  <strong style="text-decoration: underline">
+                    Japanese Hotcakes—thick, tender pancakes
+                  </strong>
+                  served with butter and maple syrup. A diner favorite in Japan.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹399</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Japanese Hotcakes quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Japanese Hotcakes quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 12. Anko Hotcakes -->
+            <div class="menu-pancake">
+              <img
+                src="images/anko-pancakes.jpg"
+                alt="Anko Hotcakes"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="pancake-name">Anko Hotcakes</span>
+                <p>
+                  Blend tradition with
+                  <strong style="text-decoration: underline">
+                    Anko Hotcakes—dense stacks
+                  </strong>
+                  topped with sweet red bean paste. A hearty, comforting treat.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹449</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Anko Hotcakes quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Anko Hotcakes quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 13. Honey Hotcakes -->
+            <div class="menu-pancake">
+              <img
+                src="images/Honey-Hotcakes-1.jpeg"
+                alt="Honey Hotcakes"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="pancake-name">Honey Hotcakes</span>
+                <p>
+                  Warm up with
+                  <strong style="text-decoration: underline">
+                    Honey Hotcakes—thick pancakes
+                  </strong>
+                  soaked in golden honey and a touch of butter. Simple and
+                  sweet.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹399</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Honey Hotcakes quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Honey Hotcakes quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 14. Miso Caramel Hotcakes -->
+            <div class="menu-pancake">
+              <img
+                src="images/Miso Caramel Hotcakes.jpg"
+                alt="Miso Caramel Hotcakes"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="pancake-name">Miso Caramel Hotcakes</span>
+                <p>
+                  Explore the unique taste of
+                  <strong style="text-decoration: underline">
+                    Miso Caramel Hotcakes—rich stacks
+                  </strong>
+                  drizzled with miso-infused caramel. A sweet-savory
+                  masterpiece.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹549</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Miso Caramel Hotcakes quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Miso Caramel Hotcakes quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 15. Matcha Crepes -->
+            <div class="menu-pancake">
+              <img
+                src="images/Matcha Crepes.jpg"
+                alt="Matcha Crepes"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="pancake-name">Matcha Crepes</span>
+                <p>
+                  Unwrap the delicate joy of
+                  <strong style="text-decoration: underline">
+                    Matcha Crepes—thin layers
+                  </strong>
+                  filled with whipped cream or red bean paste. A street food
+                  treasure.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹399</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Matcha Crepes quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Matcha Crepes quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 16. Harajuku Crepes -->
+            <div class="menu-pancake">
+              <img
+                src="images/Harajuku Crepes.jpg"
+                alt="Harajuku Crepes"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="pancake-name">Harajuku Crepes</span>
+                <p>
+                  Dive into the fun of
+                  <strong style="text-decoration: underline">
+                    Harajuku Crepes—colorful rolls
+                  </strong>
+                  packed with strawberries, bananas, and chocolate. A Tokyo
+                  street icon.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹549</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Harajuku Crepes quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Harajuku Crepes quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 17. Azuki Crepes -->
+            <div class="menu-pancake">
+              <img
+                src="images/Azuki Crepes.jpg"
+                alt="Azuki Crepes"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="pancake-name">Azuki Crepes</span>
+                <p>
+                  Savor the classic taste of
+                  <strong style="text-decoration: underline">
+                    Azuki Crepes—thin wraps
+                  </strong>
+                  filled with sweet red bean paste. A timeless Japanese delight.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹399</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Azuki Crepes quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Azuki Crepes quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 18. Custard Crepes -->
+            <div class="menu-pancake">
+              <img
+                src="images/Custard Crepes.jpeg"
+                alt="Custard Crepes"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="pancake-name">Custard Crepes</span>
+                <p>
+                  Enjoy the silky richness of
+                  <strong style="text-decoration: underline">
+                    Custard Crepes—delicate layers
+                  </strong>
+                  stuffed with smooth custard cream. A portable dessert dream.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹399</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Custard Crepes quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Custard Crepes quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 19. Banana Chocolate Crepes -->
+            <div class="menu-pancake">
+              <img
+                src="images/Banana Chocolate Crepes.jpg"
+                alt="Banana Chocolate Crepes"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="pancake-name">Banana Chocolate Crepes</span>
+                <p>
+                  Treat yourself to
+                  <strong style="text-decoration: underline">
+                    Banana Chocolate Crepes—thin rolls
+                  </strong>
+                  bursting with bananas and chocolate sauce. A festival
+                  favorite.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹449</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Banana Chocolate Crepes quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Banana Chocolate Crepes quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 20. Savory Okonomiyaki Crepes -->
+            <div class="menu-pancake">
+              <img
+                src="images/Savory Okonomiyaki Crepes.jpg"
+                alt="Savory Okonomiyaki Crepes"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="pancake-name">Savory Okonomiyaki Crepes</span>
+                <p>
+                  Try the savory twist of
+                  <strong style="text-decoration: underline">
+                    Okonomiyaki Crepes—thin pancakes
+                  </strong>
+                  with cabbage, sauce, mayo, and bonito flakes. A bold take on
+                  tradition.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹499</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Savory Okonomiyaki Crepes quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Savory Okonomiyaki Crepes quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Assorted Delicacies Tab -->
+          <div id="delicacies" class="tab-pane">
+            <!-- 1. Anpan Bun -->
+            <div class="menu-delicacy">
+              <img src="images/Anpan.jpg" alt="Anpan Bun" loading="lazy" />
+              <div class="name-desc-wrapper">
+                <span class="delicacy-name">Anpan Bun</span>
+                <p>
+                  Enjoy the timeless taste of
+                  <strong style="text-decoration: underline">
+                    Anpan Bun—soft round buns
+                  </strong>
+                  filled with sweet red bean paste. A Japanese bakery classic
+                  topped with sesame.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹199</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Anpan Bun quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Anpan Bun quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 2. Melon Pan -->
+            <div class="menu-delicacy">
+              <img src="images/Melon Pan.jpg" alt="Melon Pan" loading="lazy" />
+              <div class="name-desc-wrapper">
+                <span class="delicacy-name">Melon Pan</span>
+                <p>
+                  Crunch into the delight of
+                  <strong style="text-decoration: underline">
+                    Melon Pan—sweet buns
+                  </strong>
+                  with a crispy cookie crust. Perfect plain or with a creamy
+                  filling.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹249</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Melon Pan quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Melon Pan quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 3. Cream Pan -->
+            <div class="menu-delicacy">
+              <img src="images/Cream Pan.jpg" alt="Cream Pan" loading="lazy" />
+              <div class="name-desc-wrapper">
+                <span class="delicacy-name">Cream Pan</span>
+                <p>
+                  Savor the creamy goodness of
+                  <strong style="text-decoration: underline">
+                    Cream Pan—fluffy rolls
+                  </strong>
+                  stuffed with rich custard. A nostalgic Japanese bread treat.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹299</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Cream Pan quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Cream Pan quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 4. Taiyaki Puff -->
+            <div class="menu-delicacy">
+              <img src="images/Taiyaki.jpg" alt="Taiyaki Puff" loading="lazy" />
+              <div class="name-desc-wrapper">
+                <span class="delicacy-name">Taiyaki Puff</span>
+                <p>
+                  Bite into the charm of
+                  <strong style="text-decoration: underline">
+                    Taiyaki Puff—fish-shaped pastries
+                  </strong>
+                  filled with red bean paste or custard. A crispy, warm street
+                  food favorite.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹299</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Taiyaki Puff quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Taiyaki Puff quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 5. Imagawa-yaki -->
+            <div class="menu-delicacy">
+              <img
+                src="images/Imagawayaki.jpg"
+                alt="Imagawayaki"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="delicacy-name">Imagawa-yaki</span>
+                <p>
+                  Warm up with
+                  <strong style="text-decoration: underline">
+                    Imagawa-yaki—thick pastries
+                  </strong>
+                  filled with sweet anko or custard. A cozy, handheld Japanese
+                  snack.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹349</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Imagawa-yaki quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Imagawa-yaki quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 6. Kare Pan -->
+            <div class="menu-delicacy">
+              <img src="images/Kare Pan.jpg" alt="Kare Pan" loading="lazy" />
+              <div class="name-desc-wrapper">
+                <span class="delicacy-name">Kare Pan</span>
+                <p>
+                  Try the savory crunch of
+                  <strong style="text-decoration: underline">
+                    Kare Pan—bread rolls
+                  </strong>
+                  filled with Japanese curry and fried in panko. A hearty bakery
+                  delight.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹399</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Kare Pan quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Kare Pan quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 7. Choux Cream -->
+            <div class="menu-delicacy">
+              <img
+                src="images/Choux Cream.jpg"
+                alt="Choux Cream"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="delicacy-name">Choux Cream</span>
+                <p>
+                  Indulge in the lightness of
+                  <strong style="text-decoration: underline">
+                    Choux Cream—airy puffs
+                  </strong>
+                  filled with custard or whipped cream. A delicate Japanese
+                  dessert.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹299</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Choux Cream quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Choux Cream quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 8. Mochi Donuts -->
+            <div class="menu-delicacy">
+              <img
+                src="images/Mochi Donuts.jpg"
+                alt="Mochi Donuts"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="delicacy-name">Mochi Donuts</span>
+                <p>
+                  Chew into the fun of
+                  <strong style="text-decoration: underline">
+                    Mochi Donuts—ring-shaped treats
+                  </strong>
+                  made with mochi dough and glazed with matcha or strawberry. A
+                  modern twist.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹349</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Mochi Donuts quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Mochi Donuts quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 9. Castella Cake -->
+            <div class="menu-delicacy">
+              <img
+                src="images/Castella Cake.jpg"
+                alt="Castella Cake"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="delicacy-name">Castella Cake</span>
+                <p>
+                  Relish the moist sweetness of
+                  <strong style="text-decoration: underline">
+                    Castella Cake—spongy layers
+                  </strong>
+                  crafted with honey and sugar. A Japanese take on a Portuguese
+                  classic.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹399</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Castella Cake quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Castella Cake quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 10. Daifuku-mochi -->
+            <div class="menu-delicacy">
+              <img
+                src="images/Daifuku.jpg"
+                alt="Daifuku-mochi"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="delicacy-name">Daifuku-mochi</span>
+                <p>
+                  Pop the chewy joy of
+                  <strong style="text-decoration: underline">
+                    Daifuku-mochi—mochi balls
+                  </strong>
+                  filled with red bean paste or strawberry cream. A bite-sized
+                  Japanese sweet.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹249</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Daifuku-mochi quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Daifuku-mochi quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Drinks Tab -->
+          <div id="drinks" class="tab-pane">
+            <!-- 1. Matcha Latte -->
+            <div class="menu-drinks">
+              <img
+                src="images/Matcha Latte 2.jpg"
+                alt="Matcha Latte"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="drink-name">Matcha Latte</span>
+                <p>
+                  Savor the creamy bliss of a
+                  <strong style="text-decoration: underline">
+                    Matcha Latte—finely ground green tea
+                  </strong>
+                  whisked into steamed milk. A harmonious blend of earthy
+                  richness and smooth sweetness.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹399</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Matcha Latte quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Matcha Latte quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 2. Hojicha Tea -->
+            <div class="menu-drinks">
+              <img
+                src="images/Hojicha Tea 2.jpg"
+                alt="Hojicha Tea"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="drink-name">Hojicha Tea</span>
+                <p>
+                  Warm up with the toasty comfort of
+                  <strong style="text-decoration: underline">
+                    Hojicha Tea—roasted green tea leaves
+                  </strong>
+                  steeped to perfection. A nutty, soothing brew with a cozy
+                  reddish glow.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹299</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Hojicha Tea quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Hojicha Tea quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 3. Calpis-calpico -->
+            <div class="menu-drinks">
+              <img
+                src="images/Calpico Drink 2.png"
+                alt="Calpis-calpico"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="drink-name">Calpis-calpico</span>
+                <p>
+                  Refresh with the tangy sweetness of
+                  <strong style="text-decoration: underline">
+                    Calpis-calpico—a yogurt-infused soft drink
+                  </strong>
+                  served chilled. A light, milky delight that dances on your
+                  palate.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹249</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Calpis-calpico quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Calpis-calpico quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 4. Ramune Drink -->
+            <div class="menu-drinks">
+              <img
+                src="images/Ramune Drink 2.jpg"
+                alt="Ramune Drink"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="drink-name">Ramune Drink</span>
+                <p>
+                  Pop into fun with
+                  <strong style="text-decoration: underline">
+                    Ramune Drink—a fizzy lemon-lime soda
+                  </strong>
+                  sealed with a marble. A bubbly, nostalgic treat that sparkles
+                  with every sip.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹299</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Ramune Drink quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Ramune Drink quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 5. Sakura Tea -->
+            <div class="menu-drinks">
+              <img
+                src="images/Sakura Tea.jpg"
+                alt="Sakura Tea"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="drink-name">Sakura Tea</span>
+                <p>
+                  Sip the delicate charm of
+                  <strong style="text-decoration: underline">
+                    Sakura Tea—cherry blossom petals
+                  </strong>
+                  steeped into a floral brew. A subtly salty taste of spring in
+                  every cup.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹349</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Sakura Tea quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Sakura Tea quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 6. Umeshu Soda -->
+            <div class="menu-drinks">
+              <img
+                src="images/Umeshu Soda.jpg"
+                alt="Umeshu Soda"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="drink-name">Umeshu Soda</span>
+                <p>
+                  Cool off with
+                  <strong style="text-decoration: underline">
+                    Umeshu Soda—plum wine fizz
+                  </strong>
+                  mixed with soda water. A sweet-tart burst of refreshment.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹449</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Umeshu Soda quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Umeshu Soda quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 7. Genmaicha Latte -->
+            <div class="menu-drinks">
+              <img
+                src="images/Genmaicha Latte.jpg"
+                alt="Genmaicha Latte"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="drink-name">Genmaicha Latte</span>
+                <p>
+                  Enjoy the nutty warmth of
+                  <strong style="text-decoration: underline">
+                    Genmaicha Latte—roasted rice tea
+                  </strong>
+                  blended with frothy milk. A toasty, creamy delight.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹399</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Genmaicha Latte quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Genmaicha Latte quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 8. Mugicha Tea -->
+            <div class="menu-drinks">
+              <img
+                src="images/Mugicha (Barley Tea).jpg"
+                alt="Mugicha Tea"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="drink-name">Mugicha Tea</span>
+                <p>
+                  Quench your thirst with
+                  <strong style="text-decoration: underline">
+                    Mugicha Tea—roasted barley tea
+                  </strong>
+                  served chilled. A light, earthy flavor with no caffeine.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹249</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Mugicha Tea quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Mugicha Tea quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 9. Yuzu Honey Drink -->
+            <div class="menu-drinks">
+              <img
+                src="images/Yuzu Honey Drink.jpg"
+                alt="Yuzu Honey Drink"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="drink-name">Yuzu Honey Drink</span>
+                <p>
+                  Brighten up with
+                  <strong style="text-decoration: underline">
+                    Yuzu Honey Drink—citrusy yuzu
+                  </strong>
+                  mixed with sweet honey. A soothing sip, hot or cold.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹349</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Yuzu Honey Drink quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Yuzu Honey Drink quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 10. Aojiru Smoothie -->
+            <div class="menu-drinks">
+              <img
+                src="images/Aojiru Smoothie.jpg"
+                alt="Aojiru Smoothie"
+                loading="lazy"
+              />
+              <div class="name-desc-wrapper">
+                <span class="drink-name">Aojiru Smoothie</span>
+                <p>
+                  Boost your day with
+                  <strong style="text-decoration: underline">
+                    Aojiru Smoothie—green kale powder
+                  </strong>
+                  blended with fruit juice. A healthy, sweet Japanese refresher.
+                </p>
+              </div>
+              <div class="price-adder-wrapper">
+                <span class="price">₹399</span>
+                <div class="item-adder">
+                  <button
+                    class="adder-btn minus"
+                    aria-label="Decrease Aojiru Smoothie quantity"
+                  >
+                    -
+                  </button>
+                  <span class="quantity">0</span>
+                  <button
+                    class="adder-btn plus"
+                    aria-label="Increase Aojiru Smoothie quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr style="border: 1px solid #ccc; width: 80%; margin: 30px auto" />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
+    <div class="end-page">
+      <p>© 2025 Ja-Pancakes Store. All rights reserved.</p>
+      <h3><a href="#top" class="back-to-top">Back to Top ↑↑</a></h3>
+    </div>
+
+    <!-- JavaScript for Tabs, Pricing, Item Adder, and Search -->
+    <script>
+      // Debounce function
+      function debounce(func, wait) {
+        let timeout;
+        return function (...args) {
+          clearTimeout(timeout);
+          timeout = setTimeout(() => func.apply(this, args), wait);
+        };
+      }
+
+      // Tab Switching
+      const tabButtons = document.querySelectorAll(".tab-btn");
+      const tabPanes = document.querySelectorAll(".tab-pane");
+
+      tabButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          if (button.id !== "cart-btn") {
+            tabButtons.forEach((btn) => {
+              btn.classList.remove("active");
+              btn.setAttribute("aria-selected", "false");
+            });
+            tabPanes.forEach((pane) => pane.classList.remove("active"));
+            button.classList.add("active");
+            button.setAttribute("aria-selected", "true");
+            const tabId = button.getAttribute("data-tab");
+            document.getElementById(tabId).classList.add("active");
+            filterItems(""); // Reset filter when switching tabs
+          }
+        });
+      });
+
+      // Cart Popup Functionality
+      const cartBtn = document.getElementById("cart-btn");
+      const cartPopup = document.getElementById("cart-popup");
+
+      cartBtn.addEventListener("mouseenter", () => {
+        cartPopup.style.display = "block";
+      });
+
+      cartBtn.addEventListener("mouseleave", () => {
+        cartPopup.style.display = "none";
+      });
+
+      // Cart Functionality
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      const cartCountSpan = document.getElementById("cart-count");
+
+      function updateCartCount() {
+        const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+        cartCountSpan.textContent = totalItems;
+      }
+
+      function addToCart(name, price, image, quantityChange) {
+        const existingItem = cart.find((item) => item.name === name);
+        if (existingItem) {
+          existingItem.quantity += quantityChange;
+          if (existingItem.quantity <= 0) {
+            cart = cart.filter((item) => item.name !== name);
+          }
+        } else if (quantityChange > 0) {
+          cart.push({ name, price, image, quantity: quantityChange });
+        }
+        localStorage.setItem("cart", JSON.stringify(cart));
+        updateCartCount();
+
+        // Toast notification
+        const toast = document.createElement("div");
+        toast.textContent = `${name} ${
+          quantityChange > 0 ? "added to" : "removed from"
+        } cart!`;
+        toast.style.cssText =
+          "position: fixed; top: 20px; right: 20px; background: #d2691e; color: white; padding: 10px; border-radius: 5px; z-index: 1000;";
+        document.body.appendChild(toast);
+        setTimeout(() => toast.remove(), 2000);
+      }
+
+      // Sync quantities with cart on page load
+      function syncQuantitiesWithCart() {
+        document
+          .querySelectorAll(".menu-pancake, .menu-delicacy, .menu-drinks")
+          .forEach((item) => {
+            const name = item.querySelector(
+              ".pancake-name, .delicacy-name, .drink-name"
+            ).textContent;
+            const quantitySpan = item.querySelector(".quantity");
+            const cartItem = cart.find((cartItem) => cartItem.name === name);
+            quantitySpan.textContent = cartItem ? cartItem.quantity : 0;
+          });
+      }
+
+      // Item Adder Functionality
+      document
+        .querySelectorAll(".menu-pancake, .menu-delicacy, .menu-drinks")
+        .forEach((item) => {
+          const minusBtn = item.querySelector(".adder-btn.minus");
+          const plusBtn = item.querySelector(".adder-btn.plus");
+          const quantitySpan = item.querySelector(".quantity");
+          const name = item.querySelector(
+            ".pancake-name, .delicacy-name, .drink-name"
+          ).textContent;
+          const price = parseFloat(
+            item.querySelector(".price").textContent.replace("₹", "")
+          );
+          const image = item.querySelector("img").src;
+
+          let quantity = parseInt(quantitySpan.textContent) || 0;
+
+          plusBtn.addEventListener(
+            "click",
+            debounce(() => {
+              quantity++;
+              quantitySpan.textContent = quantity;
+              addToCart(name, price, image, 1);
+            }, 200)
+          );
+
+          minusBtn.addEventListener(
+            "click",
+            debounce(() => {
+              if (quantity > 0) {
+                quantity--;
+                quantitySpan.textContent = quantity;
+                addToCart(name, price, image, -1);
+              }
+            }, 200)
+          );
+        });
+
+      // Search Filter Functionality
+      const searchInput = document.getElementById("search-input");
+      const allItems = document.querySelectorAll(
+        ".menu-pancake, .menu-delicacy, .menu-drinks"
+      );
+
+      function filterItems(searchTerm) {
+        const activeTab = document.querySelector(".tab-pane.active");
+        allItems.forEach((item) => {
+          const name = item
+            .querySelector(".pancake-name, .delicacy-name, .drink-name")
+            .textContent.toLowerCase();
+          const description = item.querySelector("p").textContent.toLowerCase();
+          const matches =
+            name.includes(searchTerm.toLowerCase()) ||
+            description.includes(searchTerm.toLowerCase());
+          const isInActiveTab = activeTab.contains(item);
+
+          if (searchTerm === "") {
+            // If search is empty, show only items in the active tab
+            item.style.display = isInActiveTab ? "flex" : "none";
+          } else {
+            // If searching, show matching items regardless of tab
+            item.style.display = matches ? "flex" : "none";
+          }
+        });
+      }
+
+      searchInput.addEventListener(
+        "input",
+        debounce(() => {
+          filterItems(searchInput.value);
+        }, 300)
+      );
+
+      // Initialize cart count, sync quantities, and filter on page load
+      document.addEventListener("DOMContentLoaded", () => {
+        updateCartCount();
+        syncQuantitiesWithCart();
+        filterItems(""); // Ensure initial state respects active tab
+      });
+    </script>
+  </body>
+</html>

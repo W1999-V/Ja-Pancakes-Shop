@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon-32x32.png" />
+    <title>Cart - Ja-Pancakes Store</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div id="top"></div>
+      <div class="navbar">
+        <div class="logo-container">
+          <img
+            src="images/japanese-souffle-pancake-vector-illustration-logo-with-caramel-sauce_499212-1389.jpg"
+            id="Logo"
+            style="display: block; margin: 0; padding: 0"
+            width="90"
+            alt="Ja-Pancakes Store Logo"
+          />
+          <h1 style="margin-left: 32px">Ja-Pancakes Shop</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="numbers.html">Numbers</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Cart Section -->
+      <div class="cart-container">
+        <h2 style="text-align: left; font-size: 32px; margin: 20px">
+          Your Cart
+        </h2>
+        <div id="cart-items"></div>
+        <div class="cart-footer">
+          <div class="checkout-total-wrapper">
+            <div class="checkout-total">
+              <h3>
+                Checkout Total: ₹
+                <span id="cart-total">0</span>
+              </h3>
+            </div>
+            <button id="checkout-btn">Checkout</button>
+          </div>
+          <button id="clear-cart-btn" class="tab-btn">Clear All</button>
+        </div>
+      </div>
+
+      <hr style="border: 1px solid #ccc; width: 80%; margin: 30px auto" />
+    </div>
+    <footer>
+      <div class="end-page">
+        <p>© 2025 Ja-Pancakes Store. All rights reserved.</p>
+        <h3><a href="#top" class="back-to-top">Back to Top ↑↑</a></h3>
+      </div>
+    </footer>
+
+    <!-- JavaScript for Cart Functionality -->
+    <script>
+      // Debounce function
+      function debounce(func, wait) {
+        let timeout;
+        return function (...args) {
+          clearTimeout(timeout);
+          timeout = setTimeout(() => func.apply(this, args), wait);
+        };
+      }
+
+      // Load cart from localStorage
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      // Function to convert USD to INR and round to nearest 50
+      function convertToINR(priceInUSD) {
+        const exchangeRate = 83; // 1 USD = 83 INR
+        const priceInINR = priceInUSD * exchangeRate;
+        const remainder = priceInINR % 100;
+        if (remainder < 25) {
+          return Math.floor(priceInINR / 50) * 50 - 1; // Round down to nearest 50, then subtract 1 (e.g., 321 -> 299)
+        } else if (remainder >= 75) {
+          return Math.ceil(priceInINR / 50) * 50 - 1; // Round up to nearest 50, then subtract 1 (e.g., 638 -> 649)
+        } else {
+          return Math.round(priceInINR / 50) * 50 - 1; // Round to nearest 50, then subtract 1
+        }
+      }
+
+      // Check and convert cart prices if they're in USD
+      function normalizeCartPrices() {
+        const hasUSDPrices = cart.some((item) => item.price < 50); // Assume prices < 50 are USD (since INR prices are 199+)
+        if (hasUSDPrices) {
+          cart = cart.map((item) => ({
+            ...item,
+            price: convertToINR(item.price),
+            originalCurrency: "INR", // Flag to avoid reconverting
+          }));
+          localStorage.setItem("cart", JSON.stringify(cart));
+        }
+      }
+
+      function displayCart() {
+        const cartItemsDiv = document.getElementById("cart-items");
+        const cartTotalSpan = document.getElementById("cart-total");
+        cartItemsDiv.innerHTML = "";
+
+        // Clean up invalid items and normalize prices
+        cart = cart.filter(
+          (item) =>
+            item && item.name && item.price && item.quantity && item.image
+        );
+        normalizeCartPrices();
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        if (cart.length === 0) {
+          cartItemsDiv.innerHTML = "<p>Your cart is empty.</p>";
+          cartTotalSpan.textContent = "0";
+          return;
+        }
+
+        let total = 0;
+        cart.forEach((item, index) => {
+          const itemTotal = item.price * item.quantity;
+          const itemDiv = document.createElement("div");
+          itemDiv.classList.add("cart-item");
+          itemDiv.innerHTML = `
+            <img src="${item.image}" alt="${item.name}" loading="lazy" />
+            <div class="name-desc-wrapper">
+              <span class="cart-item-name">${item.name}</span>
+              <p>Total: ₹${itemTotal}</p>
+              <div class="item-adder">
+                <button class="adder-btn minus" data-index="${index}" aria-label="Decrease ${item.name} quantity">-</button>
+                <span class="quantity">${item.quantity}</span>
+                <button class="adder-btn plus" data-index="${index}" aria-label="Increase ${item.name} quantity">+</button>
+              </div>
+            </div>
+          `;
+          cartItemsDiv.appendChild(itemDiv);
+          total += itemTotal;
+        });
+
+        cartTotalSpan.textContent = total;
+      }
+
+      // Clear cart functionality
+      document
+        .getElementById("clear-cart-btn")
+        .addEventListener("click", () => {
+          cart = [];
+          localStorage.setItem("cart", JSON.stringify(cart));
+          displayCart();
+        });
+
+      // Update quantity with debounce
+      document.addEventListener("click", (e) => {
+        if (e.target.classList.contains("minus")) {
+          const index = e.target.dataset.index;
+          debounce(() => {
+            if (cart[index].quantity > 1) {
+              cart[index].quantity--;
+            } else {
+              cart.splice(index, 1);
+            }
+            localStorage.setItem("cart", JSON.stringify(cart));
+            displayCart();
+          }, 200)();
+        }
+        if (e.target.classList.contains("plus")) {
+          const index = e.target.dataset.index;
+          debounce(() => {
+            cart[index].quantity++;
+            localStorage.setItem("cart", JSON.stringify(cart));
+            displayCart();
+          }, 200)();
+        }
+      });
+
+      // Checkout functionality
+      document.getElementById("checkout-btn").addEventListener("click", () => {
+        const total = parseFloat(
+          document.getElementById("cart-total").textContent
+        );
+        if (cart.length > 0 && total > 0) {
+          window.location.href = "checkout.html";
+        } else {
+          alert("Your cart is empty!");
+        }
+      });
+
+      // Display cart on page load
+      document.addEventListener("DOMContentLoaded", () => {
+        displayCart();
+      });
+    </script>
+  </body>
+</html>
