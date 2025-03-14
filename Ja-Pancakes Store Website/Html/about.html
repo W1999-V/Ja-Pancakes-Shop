@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon-32x32.png" />
+    <title>Ja-Pancakes Shop - About</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="slideshow.js" defer></script>
+    <script>
+      window.addEventListener("load", function () {
+        const loader = document.querySelector(".loader");
+        const minimumDisplayTime = 2000; // 2 seconds
+        const startTime = Date.now();
+        const timeElapsed = Date.now() - startTime;
+        const remainingTime = Math.max(0, minimumDisplayTime - timeElapsed);
+
+        setTimeout(function () {
+          loader.classList.add("hidden"); // Add hidden class to trigger fade-out
+          setTimeout(function () {
+            loader.style.display = "none";
+          }, 500); // Match the transition duration (0.5s)
+        }, remainingTime);
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Loading Animation Overlay -->
+    <div class="loader">
+      <img
+        src="images/Table Fan Loading.gif"
+        alt="Loading Fan"
+        class="fan-icon"
+      />
+    </div>
+
+    <div id="top"></div>
+    <div class="navbar">
+      <div class="logo-container">
+        <img
+          src="images/japanese-souffle-pancake-vector-illustration-logo-with-caramel-sauce_499212-1389.jpg"
+          id="Logo"
+          style="display: block; margin: 0; padding: 0"
+          width="90"
+          alt="Ja-Pancakes Shop Logo"
+        />
+        <h1 style="margin-left: 32px">Ja-Pancakes Shop</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="stores.html">Stores</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="about-slideshow-container">
+      <div class="slide active">
+        <img src="images/About cover.jpg" alt="Shop Img" class="slide-img" />
+      </div>
+      <div class="slide">
+        <img src="images/About cover 1.jpg" alt="Shop Img" class="slide-img" />
+      </div>
+      <div class="slide">
+        <img src="images/About cover 2.jpg" alt="Shop Img" class="slide-img" />
+      </div>
+      <div class="slide">
+        <img src="images/About cover 3.jpg" alt="Shop Img" class="slide-img" />
+      </div>
+      <div class="slide">
+        <img src="images/About cover 4.jpg" alt="Shop Img" class="slide-img" />
+      </div>
+      <div class="slide">
+        <img src="images/About cover 5.jpg" alt="Shop Img" class="slide-img" />
+      </div>
+      <div class="slide">
+        <img
+          src="images/shop-shibuya.jpg"
+          alt="Shibuya Shop"
+          class="slide-img"
+        />
+      </div>
+      <button class="prev" onclick="plusSlides(-1)">❮</button>
+      <button class="next" onclick="plusSlides(1)">❯</button>
+      <div class="dot-container"></div>
+      <div class="about-cta-section">
+        <h2 class="hero-tagline">Crafting Joy, One Shop at a Time</h2>
+        <a href="stores.html" class="cta-button">Find Stores Near You</a>
+      </div>
+    </div>
+
+    <section class="intro-section">
+      <h3 style="text-align: center; font-weight: bold">About Us</h3>
+
+      <h4 style="text-align: center; margin-top: 20px">Our Story</h4>
+      <p
+        class="fade-in"
+        style="text-align: center; margin: 20px 50px; animation-delay: 0.2s"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+        nostrum voluptatibus eligendi praesentium molestias provident
+        dignissimos, ea nam repellat est, incidunt saepe blanditiis corrupti?
+        Soluta, temporibus quia! Aliquid obcaecati numquam ullam at recusandae
+        reiciendis aliquam, perspiciatis minus accusantium eaque illo? Quaerat
+        suscipit provident eaque vitae voluptatibus esse consequatur rem laborum
+        quae ad perspiciatis recusandae dolores, itaque repellendus commodi
+        earum fuga, molestiae labore dicta. Autem labore ipsam voluptatibus quod
+        velit, nostrum repellendus assumenda quam est voluptatem eligendi,
+        explicabo placeat earum quasi facere cum incidunt, ex magnam iure
+        temporibus mollitia porro corporis voluptatum maiores?
+      </p>
+      <hr style="border: 1px solid #ccc; width: 80%; margin: 30px auto" />
+
+      <h4 style="text-align: center; margin-top: 20px">Our Passion</h4>
+      <p
+        class="fade-in"
+        style="text-align: center; margin: 20px 50px; animation-delay: 0.4s"
+      >
+        Qui ratione tempore et veritatis eos incidunt quo, alias nam, vitae
+        nobis earum quia ullam magni praesentium inventore, reiciendis modi
+        velit voluptate temporibus ipsa eius. Voluptate voluptatem id dolor
+        exercitationem dolorum aliquid repellat rerum, placeat quos culpa
+        nostrum omnis eum ipsa odio, consectetur sit repudiandae ipsum delectus
+        aut veritatis laudantium. Non nulla beatae dolor amet perspiciatis
+        laudantium ullam culpa, distinctio esse, recusandae tenetur, aspernatur
+        eius consequuntur vitae quod in quo accusamus reiciendis animi
+        assumenda.
+        <em>
+          Natus ullam placeat iste dolore obcaecati fugiat illo unde adipisci
+          dolorum aut. Eligendi totam quae autem quis similique! Fugit incidunt
+          at nobis. Corporis molestias laborum adipisci voluptatem vero
+          distinctio nostrum dolorum error eum laudantium.
+        </em>
+      </p>
+      <hr style="border: 1px solid #ccc; width: 80%; margin: 30px auto" />
+
+      <h4 style="text-align: center; margin-top: 20px">Our Promise</h4>
+      <p
+        class="fade-in"
+        style="text-align: center; margin: 20px 50px; animation-delay: 0.6s"
+      >
+        Similique dolor temporibus vitae. Corrupti molestiae deleniti nulla
+        iste, pariatur at optio tempore fuga maxime velit error iure atque
+        nesciunt facilis adipisci, labore quaerat accusamus odit sunt voluptatem
+        enim. Non, error possimus ut repudiandae quibusdam saepe deserunt
+        praesentium modi tempora perferendis asperiores odit debitis, cupiditate
+        suscipit voluptas maxime molestias eveniet inventore eligendi! Libero,
+        ab molestias! Aut iste praesentium obcaecati eveniet pariatur! Ut soluta
+        reprehenderit itaque repudiandae atque eius ducimus consequatur expedita
+        iure, vitae culpa eaque ad quibusdam commodi voluptatem cupiditate unde,
+        debitis inventore. Reiciendis similique perspiciatis quia sequi atque,
+        doloremque itaque nam eligendi recusandae asperiores quam iure numquam
+        provident, rerum tempora inventore impedit voluptatem est expedita. Eius
+        obcaecati eos suscipit tenetur, provident optio, ipsum autem delectus id
+        numquam quisquam.
+      </p>
+      <hr style="border: 1px solid #ccc; width: 80%; margin: 30px auto" />
+
+      <h4 style="text-align: center; margin-top: 20px">
+        What Our Customers Say
+      </h4>
+      <div class="reviews-container">
+        <!-- Initial visible reviews -->
+        <div class="review fade-in" style="animation-delay: 0.8s">
+          <p>
+            "The fluffiest pancakes I’ve ever had! Ja-Pancakes Shop is my go-to
+            spot for a sweet escape."
+          </p>
+          <p class="reviewer">- Aiko T., Mumbai</p>
+        </div>
+        <div class="review fade-in" style="animation-delay: 1s">
+          <p>
+            "Amazing service and even better flavors. The caramel soufflé is to
+            die for!"
+          </p>
+          <p class="reviewer">- Ravi K., Bangalore</p>
+        </div>
+        <div class="review fade-in" style="animation-delay: 1.2s">
+          <p>
+            "A cozy vibe and delicious treats—perfect for a weekend brunch."
+          </p>
+          <p class="reviewer">- Mia S., Chennai</p>
+        </div>
+        <!-- Hidden reviews to reveal with "See More" -->
+        <div class="review hidden">
+          <p>"Every bite feels like a hug. Best pancakes in town!"</p>
+          <p class="reviewer">- Hana Y., Kochi</p>
+        </div>
+        <div class="review hidden">
+          <p>"The staff are so friendly, and the pancakes are pure bliss."</p>
+          <p class="reviewer">- Kenji M., Mumbai</p>
+        </div>
+        <div class="review hidden">
+          <p>"I keep coming back for the matcha soufflé—it’s unreal!"</p>
+          <p class="reviewer">- Priya L., Bangalore</p>
+        </div>
+        <div class="review hidden">
+          <p>"A little slice of heaven in every fluffy stack."</p>
+          <p class="reviewer">- Sora H., Chennai</p>
+        </div>
+        <div class="review hidden">
+          <p>"Perfect balance of sweet and fluffy. Highly recommend!"</p>
+          <p class="reviewer">- Liam P., Kochi</p>
+        </div>
+        <!-- Additional hidden reviews -->
+        <div class="review hidden">
+          <p>"The vibe and the food are unmatched. Love this place!"</p>
+          <p class="reviewer">- Yuki N., Mumbai</p>
+        </div>
+        <div class="review hidden">
+          <p>"Hands down the best dessert stop after a long day."</p>
+          <p class="reviewer">- Arjun S., Bangalore</p>
+        </div>
+      </div>
+      <button id="see-more-reviews" class="cta-button">See More</button>
+      <hr style="border: 1px solid #ccc; width: 80%; margin: 30px auto" />
+    </section>
+
+    <section class="special-section">
+      <h3 style="text-align: center; font-weight: bold">Our Branches</h3>
+      <ul style="text-align: center; list-style: none; padding: 0">
+        <li style="margin: 10px 0">
+          Mumbai -
+          <a href="mailto:ja-pancakesshop@mumbai.in">
+            ja-pancakesshop@mumbai.in
+          </a>
+        </li>
+        <li style="margin: 10px 0">
+          Bangalore -
+          <a href="mailto:ja-pancakesshop@bangalore.in">
+            ja-pancakesshop@bangalore.in
+          </a>
+        </li>
+        <li style="margin: 10px 0">
+          Kochi -
+          <a href="mailto:ja-pancakesshop@kochi.in">ja-pancakesshop@kochi.in</a>
+        </li>
+        <li style="margin: 10px 0">
+          Chennai -
+          <a href="mailto:ja-pancakesshop@chennai.in">
+            ja-pancakesshop@chennai.in
+          </a>
+        </li>
+      </ul>
+      <hr style="border: 1px solid #ccc; width: 80%; margin: 30px auto" />
+    </section>
+
+    <div class="end-page">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h3>Contact Us On</h3>
+          <p>+91 9876543210</p>
+          <p>+91 8765432109</p>
+          <p>+91 7654321098</p>
+          <p>+91 6543210987</p>
+          <p>contact1@japancakes.in</p>
+          <p>contact2@japancakes.in</p>
+          <p>contact3@japancakes.in</p>
+          <p>contact4@japancakes.in</p>
+        </div>
+        <div class="footer-column">
+          <h3>Ja-Pancakes Shop</h3>
+          <h5>Visit us</h5>
+          <div class="social-icons">
+            <a
+              href="https://instagram.com/japancakes"
+              target="https://www.instagram.com/"
+            >
+              <img
+                src="images/Insta Logo Social.png"
+                alt="Instagram"
+                width="30"
+              />
+            </a>
+            <a
+              href="https://facebook.com/japancakes"
+              target="https://www.facebook.com/"
+            >
+              <img
+                src="images/Facebook Logo Social.png"
+                alt="Facebook"
+                width="30"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Information</h3>
+          <p><a href="contact.html">Contact</a></p>
+          <p><a href="stores.html">Stores</a></p>
+          <p><a href="about.html">About</a></p>
+        </div>
+      </div>
+      <div class="back-to-top-container">
+        <a href="#top" class="back-to-top">Back to the Top</a>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Ja-Pancakes Shop. All rights reserved.</p>
+      </div>
+    </div>
+
+    <script src="scripts.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const seeMoreButton = document.getElementById("see-more-reviews");
+        const hiddenReviews = document.querySelectorAll(".review.hidden");
+        let visibleCount = 3; // Initial visible reviews
+
+        seeMoreButton.addEventListener("click", function () {
+          const nextBatch = Array.from(hiddenReviews).slice(
+            visibleCount,
+            visibleCount + 5
+          );
+          nextBatch.forEach((review, index) => {
+            review.classList.remove("hidden");
+            review.classList.add("fade-in");
+            review.style.animationDelay = `${0.8 + index * 0.2}s`; // Staggered fade-in
+          });
+          visibleCount += 5;
+
+          // Hide button if no more reviews to show
+          if (visibleCount >= hiddenReviews.length + 3) {
+            seeMoreButton.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
